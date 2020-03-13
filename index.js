@@ -1,8 +1,9 @@
+const { dirname } = require("path");
 const { openSync, writeFileSync } = require("fs");
 const { execSync } = require("child_process");
 const config = require("./config");
 
-const rootPath = __dirname;
+const rootPath = dirname(require.main.filename).split("/node_modules")[0];
 const configFilename = ".huskyrc.js";
 const filepath = `${rootPath}/${configFilename}`;
 const fileContent = `module.exports = ${JSON.stringify(config)}`;
