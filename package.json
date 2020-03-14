@@ -1,5 +1,5 @@
 {
-  "name": "@itemize/husky-config",
+  "name": "@itemizecorp/husky-config-react",
   "version": "1.0.0",
   "description": "Husky config for projects at Itemize Corp",
   "main": "index.js",
